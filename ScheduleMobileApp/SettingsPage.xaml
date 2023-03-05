@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleMobileApp.SettingsPage"
+             Appearing="ContentPage_Appearing">
+    <ContentPage.Content >
+        <Grid Padding="10" BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundColorThemeLight}, Default= {StaticResource BackgroundColorThemeLight}, Dark={StaticResource BackgroundColorThemeDark}}">
+            <StackLayout>
+                <StackLayout x:Name="GroupContainerStackLayout" IsVisible="True">
+                    <Label Text="Группа" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"/>
+                    <Picker x:Name="PickerGroupSelect" ItemDisplayBinding="{Binding Name}"  SelectedIndexChanged="PickerGroupSelect_SelectedIndexChanged" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"  BackgroundColor="{AppThemeBinding Default={StaticResource ContentLevel1BackgroundColorThemeLight}, Light={StaticResource ContentLevel1BackgroundColorThemeLight}, Dark={StaticResource ContentLevel1BackgroundColorThemeDark}}"/>
+                </StackLayout>
+                
+                <StackLayout x:Name="CellIdContainerStackLayout" IsVisible="False">
+                    <Label Text="Показывать CellID" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"/>
+                    <Switch x:Name="SwitchShowCellId" IsToggled="False"  Toggled="SwitchShowCellId_Toggled" OnColor="{AppThemeBinding Default={StaticResource SwitchOnColorThemeLight}, Light= {StaticResource SwitchOnColorThemeLight},Dark= {StaticResource SwitchOnColorThemeDark}}" ThumbColor="{AppThemeBinding Default={StaticResource SwitchThumbColorThemeLight}, Light= {StaticResource SwitchThumbColorThemeLight},Dark= {StaticResource SwitchThumbColorThemeDark}}"/>
+                </StackLayout>
+
+                <StackLayout x:Name="TypeOfWeekContainerStackLayout" IsVisible="False">
+                    <Label Text="Показывать тип недели" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"/>
+                    <Switch x:Name="SwitchShowTypeOfWeek" IsToggled="True"  Toggled="SwitchShowTypeOfWeek_Toggled" OnColor="{AppThemeBinding Default={StaticResource SwitchOnColorThemeLight}, Light= {StaticResource SwitchOnColorThemeLight},Dark= {StaticResource SwitchOnColorThemeDark}}" ThumbColor="{AppThemeBinding Default={StaticResource SwitchThumbColorThemeLight}, Light= {StaticResource SwitchThumbColorThemeLight},Dark= {StaticResource SwitchThumbColorThemeDark}}"/>
+                </StackLayout>
+
+                <StackLayout x:Name="ThemeAppContainerStackLayout" IsVisible="True">
+                    <Label Text="Тема" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"/>
+                    <Switch x:Name="SwitchThemeApp" IsToggled="False"  Toggled="SwitchThemeApp_Toggled" OnColor="{AppThemeBinding Default={StaticResource SwitchOnColorThemeLight}, Light= {StaticResource SwitchOnColorThemeLight},Dark= {StaticResource SwitchOnColorThemeDark}}" ThumbColor="{AppThemeBinding Default={StaticResource SwitchThumbColorThemeLight}, Light= {StaticResource SwitchThumbColorThemeLight},Dark= {StaticResource SwitchThumbColorThemeDark}}"/>
+                </StackLayout>
+
+                <StackLayout x:Name="TypeServerContainerStackLayout" IsVisible="False">
+                    <Label Text="Тип сервера (удалленный / локальный)" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"/>
+                    <Switch x:Name="SwitchTypeServer" IsToggled="False"  Toggled="SwitchTypeServer_Toggled" OnColor="{AppThemeBinding Default={StaticResource SwitchOnColorThemeLight}, Light= {StaticResource SwitchOnColorThemeLight},Dark= {StaticResource SwitchOnColorThemeDark}}" ThumbColor="{AppThemeBinding Default={StaticResource SwitchThumbColorThemeLight}, Light= {StaticResource SwitchThumbColorThemeLight},Dark= {StaticResource SwitchThumbColorThemeDark}}"/>
+                </StackLayout>
+
+                <StackLayout x:Name="ModeDeveloperContainerStackLayout" IsVisible="False">
+                    <Label Text="Режим разработчика" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"/>
+                    <Switch x:Name="SwitchModeDeveloper" IsToggled="False"  Toggled="SwitchModeDeveloper_Toggled" OnColor="{AppThemeBinding Default={StaticResource SwitchOnColorThemeLight}, Light= {StaticResource SwitchOnColorThemeLight},Dark= {StaticResource SwitchOnColorThemeDark}}" ThumbColor="{AppThemeBinding Default={StaticResource SwitchThumbColorThemeLight}, Light= {StaticResource SwitchThumbColorThemeLight},Dark= {StaticResource SwitchThumbColorThemeDark}}"/>
+                </StackLayout>
+
+                <Button Text="О приложении" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

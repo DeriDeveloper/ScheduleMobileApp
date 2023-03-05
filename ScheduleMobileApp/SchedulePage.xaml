@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleMobileApp.SchedulePage">
+    <ContentPage.Content>
+        <Grid Padding="10, 0" BackgroundColor="{AppThemeBinding Default= {StaticResource BackgroundColorThemeLight}, Light={StaticResource BackgroundColorThemeLight},  Dark={StaticResource BackgroundColorThemeDark}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0"  VerticalOptions="Center">
+                <StackLayout>
+                    <StackLayout x:Name="ContainerTypeOfWeek" Orientation="Horizontal">
+                        <Label Text="Тип недели:" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"/>
+                        <Label x:Name="LabelTypeOfWeek" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"/>
+                    </StackLayout>
+                </StackLayout>
+                <Frame x:Name="TopMenuDayOfWeekAndDate" Grid.Row="0" Padding="0" Margin="0" BackgroundColor="Transparent"></Frame>
+            </StackLayout>
+            <ScrollView Grid.Row="1">
+                <StackLayout x:Name="CellsScheduleStackLayout" Spacing="10" Padding="0,10,0,10">
+
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

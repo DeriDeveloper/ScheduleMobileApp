@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleMobileApp.CallsSchedulePage"
+             Appearing="ContentPage_Appearing"
+             BackgroundColor="{AppThemeBinding Default={StaticResource BackgroundColorThemeLight}, Light={StaticResource BackgroundColorThemeLight},Dark={StaticResource BackgroundColorThemeDark}}">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Picker x:Name="PickerDayOfWeek" Margin="15" ItemDisplayBinding="{Binding Name}" SelectedIndexChanged="PickerDayOfWeek_SelectedIndexChanged" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight}, Dark={StaticResource ColorTextDefaultDark}}"  BackgroundColor="{AppThemeBinding Default={StaticResource ContentLevel1BackgroundColorThemeLight}, Light={StaticResource ContentLevel1BackgroundColorThemeLight}, Dark={StaticResource ContentLevel1BackgroundColorThemeDark}}"/>
+                <ScrollView>
+                    <StackLayout x:Name="StackLayoutCallsSchedule" Padding="15">
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleMobileApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PurpleDefault">#9457EB</Color>
+            
+            <Color x:Key="ColorTextLink">#9457EB</Color>
+            
+            <Color x:Key="ColorTextDefaultLight">#0f0f0f</Color>
+            <Color x:Key="ColorTextDefaultDark">#EFEFEF</Color>
+
+            <Color x:Key="BackgroundColorThemeLight">#EFEFEF</Color>
+            <Color x:Key="BackgroundColorThemeDark">#1D1D21</Color>
+
+            <Color x:Key="ContentLevel1BackgroundColorThemeLight">#FFF</Color>
+            <Color x:Key="ContentLevel1BackgroundColorThemeDark">#38373C</Color>
+
+            <Color x:Key="ContentLevel1BackgroundColorChangeThemeLight">#A8ADDB</Color>
+            <Color x:Key="ContentLevel1BackgroundColorChangeThemeDark">#36356B</Color>
+
+            <Color x:Key="ContentLevel1BorderColorThemeLight">#FFF</Color>
+            <Color x:Key="ContentLevel1BorderColorThemeDark">#38373C</Color>
+
+            <Color x:Key="SwitchThumbColorThemeLight">#C7C7C7</Color>
+            <Color x:Key="SwitchThumbColorThemeDark">#64626B</Color>
+
+            <Color x:Key="SwitchOnColorThemeLight">#A9A9A9</Color>
+            <Color x:Key="SwitchOnColorThemeDark">#4E4C53</Color>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

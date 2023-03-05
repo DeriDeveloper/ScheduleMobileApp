@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleMobileApp.TabbedPageMain"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:local="clr-namespace:ScheduleMobileApp;assembly=ScheduleMobileApp"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSmoothScrollEnabled="False"
+            android:TabbedPage.OffscreenPageLimit="5"
+            android:TabbedPage.IsSwipePagingEnabled="False"
+            BarTextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight},Light={StaticResource ColorTextDefaultLight},Dark={StaticResource ColorTextDefaultDark}}"
+            BackgroundColor="{AppThemeBinding Default={StaticResource ContentLevel1BackgroundColorThemeLight}, Light={StaticResource ContentLevel1BackgroundColorThemeLight}, Dark={StaticResource ContentLevel1BackgroundColorThemeDark}}">
+
+</TabbedPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleMobileApp.AboutApplicationPage"
+             BackgroundColor="{AppThemeBinding Default={StaticResource BackgroundColorThemeLight}, Light={StaticResource BackgroundColorThemeLight},Dark={StaticResource BackgroundColorThemeDark}}"
+             Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView>
+                <StackLayout Padding="15">
+                    <Label Text="О приложении" HorizontalOptions="Center" FontSize="18" TextColor="{AppThemeBinding Default={StaticResource ColorTextDefaultLight}, Light={StaticResource ColorTextDefaultLight},Dark={StaticResource ColorTextDefaultDark}}"/>
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="Версия: "/>
+                            <Label x:Name="AppVersionLabel"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Margin="0,30,0,0">
+                        <Image x:Name="ImageDeveloperLogo" HorizontalOptions="Center" WidthRequest="200">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ImageDeveloperLogoTapGestureRecognizer_Tapped" NumberOfTapsRequired="2" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label LineBreakMode="WordWrap" HorizontalOptions="Center" FontSize="18">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Создал Deri Developer" TextColor="{AppThemeBinding Default={StaticResource ColorTextLink}, Light={StaticResource ColorTextLink}, Dark={StaticResource ColorTextLink}}">
+                                        <Span.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizerCreatedAppDeveloper_Tapped" />
+                                        </Span.GestureRecognizers>
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
